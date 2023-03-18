@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <a href="/">작성페이지</a><br/>
+
+        {% for obj in result_list %}
+        <hr/>
+        이름 : {{obj.writer}}<br/>
+        내용 : {{obj.content}}<br/>
+        <a href='delete_content?id={{obj.id}}'>삭제하기</a>
+        {% endfor %}
+
+    </body>
+</html>
